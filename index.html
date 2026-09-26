@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAGON SERVICE - Discord Multi-Account Voice Client & Soundpad</title>
+    <meta name="description" content="Dragon Service - Discord ses kanallarına çoklu hesap sokma, gelişmiş ses efektleri, 8D ses, bass boost ve soundpad yönetim paneli.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Dragon Background Overlay -->
+    <div class="dragon-bg-layer"></div>
+    <div class="ambient-glow"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+                <div class="dragon-icon-box">
+                    <i class="fa-solid fa-dragon"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">DRAGON SERVICE</span>
+                    <span class="brand-sub">MULTI-ACCOUNT VOICE CLIENT</span>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+                <a href="#features" class="nav-item"><i class="fa-solid fa-bolt"></i> Özellikler</a>
+                <a href="#app-preview" class="nav-item"><i class="fa-solid fa-desktop"></i> Canlı Panel</a>
+                <a href="#soundpad" class="nav-item"><i class="fa-solid fa-sliders"></i> Soundpad & FX</a>
+                <a href="#faq" class="nav-item"><i class="fa-solid fa-circle-question"></i> S.S.S</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#app-preview" class="btn btn-glow"><i class="fa-solid fa-play"></i> Paneli İncele</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section (Photo 2 Style with DRAGON SERVICE centered) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-glass-card">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                
+                <div class="hero-badge">
+                    <span class="live-dot"></span>
+                    <span>ULTIMATE DISCORD VOICE & SOUNDPAD CLIENT</span>
+                </div>
+
+                <h1 class="hero-main-title">
+                    DRAGON SERVICE
+                </h1>
+
+                <div class="hero-subtitles">
+                    <p class="hero-tagline">NEXT GEN MULTI-ACCOUNT DISCORD AUDIO ENGINE</p>
+                    <p class="hero-subtext">Aynı anda onlarca Discord hesabını ses kanallarına bağlayın, 8D Spatial Audio, Bass Boost, Pitch Shifter ve profesyonel stüdyo efektleriyle sesi kusursuzca yayınlayın.</p>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <i class="fa-solid fa-users"></i>
+                        <span><strong>25+</strong> Eşzamanlı Hesap</span>
+                    </div>
+                    <div class="stat-pill">
+                        <i class="fa-solid fa-wave-square"></i>
+                        <span><strong>96 kHz</strong> Ultra Hi-Fi Ses</span>
+                    </div>
+                    <div class="stat-pill">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span><strong>0 ms</strong> Gecikme</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#app-preview" class="btn btn-primary"><i class="fa-solid fa-layer-group"></i> Arayüzü Keşfet</a>
+                    <a href="#soundpad" class="btn btn-outline"><i class="fa-solid fa-headphones"></i> Canlı FX Simülatörü</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Showcase Section -->
+        <section id="features" class="section-container">
+            <div class="section-title-wrap">
+                <span class="section-eyebrow">GELİŞMİŞ MOTOR</span>
+                <h2 class="section-title">Neler Yapabilirsiniz?</h2>
+                <p class="section-desc">Dragon Service, Discord ses kanallarında en üst düzey ses kalitesi ve çoklu hesap yönetimini tek panelde sunar.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Multi-Account Voice Joiner</h3>
+                    <p>Tek tıkla veya toplu token (.txt) yüklemesiyle 25+ hesabı anında seçtiğiniz ses odasına sokun ve senkronize edin.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-compact-disc"></i></div>
+                    <h3>Soundpad & Medya Oynatıcı</h3>
+                    <p>MP3, MP4 ve WAV formatlarını ortak veya her hesaba özel olarak yüksek kalitede çalın, duraklatın, anında geçiş yapın.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                    <h3>8D Sinematik 360° Ses</h3>
+                    <p>Kulaklıklarda sağdan sola dönen sinematik 8D çevresel ses efektiyle dinleyicileri büyüleyin.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>5-Bant Gerçek Zamanlı Ekolayzır</h3>
+                    <p>Tüm frekans bantlarını canlı olarak özelleştirin ya da hazır stüdyo önayarlarını kullanarak sesi netleştirin.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Pitch Shifter & Nightcore</h3>
+                    <p>Ses tonunu canlı olarak kalınlaştırın veya +6 Nightcore moduna alarak eğlenceli ve dinamik tonlar yakalayın.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feat-icon"><i class="fa-solid fa-volume-high"></i></div>
+                    <h3>Bass Boost (+50 dB'ye Kadar)</h3>
+                    <p>0 dB'den +50 dB'ye kadar aşırı güçlü, patlatmayan dijital bas takviyesi ve akustik reverb yankı motoru.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live App Mockup Section (Replicating Photo 1 UI) -->
+        <section id="app-preview" class="section-container">
+            <div class="section-title-wrap">
+                <span class="section-eyebrow">İNTERAKTİF DENEYİM</span>
+                <h2 class="section-title">Dragon Service Panel Görünümü</h2>
+                <p class="section-desc">Uygulamanın şık kırmızı-siyah temalı arayüzü ve gerçek zamanlı kontrol mekanizması.</p>
+            </div>
+
+            <!-- Interactive App Frame -->
+            <div class="app-window-frame">
+                <!-- Window Titlebar -->
+                <div class="window-titlebar">
+                    <div class="titlebar-left">
+                        <i class="fa-solid fa-dragon window-logo"></i>
+                        <span class="window-title">Dragon Service</span>
+                    </div>
+                    <div class="titlebar-controls">
+                        <span class="control-btn minimize"><i class="fa-solid fa-minus"></i></span>
+                        <span class="control-btn maximize"><i class="fa-regular fa-square"></i></span>
+                        <span class="control-btn close"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                </div>
+
+                <!-- Window Main Body -->
+                <div class="window-body">
+                    <!-- Top Status Bar -->
+                    <div class="app-header-bar">
+                        <div class="app-brand-left">
+                            <div class="live-signal-box">
+                                <i class="fa-solid fa-podcast"></i>
+                            </div>
+                            <div class="brand-headings">
+                                <h2>Dragon Service</h2>
+                                <p>MULTI-ACCOUNT VOICE CLIENT</p>
+                            </div>
+                        </div>
+
+                        <div class="app-status-badges">
+                            <span class="badge-status online"><span class="indicator-dot green"></span> Connected</span>
+                            <span class="badge-status accounts"><span class="indicator-dot green"></span> 25 Accounts</span>
+                            <span class="badge-status in-voice"><span class="indicator-dot red"></span> 25 In Voice</span>
+                        </div>
+                    </div>
+
+                    <!-- App Content Grid -->
+                    <div class="app-dashboard-grid">
+                        
+                        <!-- Left Column: Accounts Manager -->
+                        <div class="app-left-panel">
+                            <!-- Add Account Section -->
+                            <div class="panel-box add-account-box">
+                                <div class="box-header-row">
+                                    <span class="box-title"><i class="fa-solid fa-plus"></i> ADD ACCOUNT</span>
+                                    <button class="btn-sm-action"><i class="fa-solid fa-file-lines"></i> Toplu Ekle (.txt)</button>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="tokenInput" placeholder="Paste Discord token here..." value="OTA4NjM3NTQxMDk5ODcy... (Encrypted)">
+                                    <button class="btn-add-token" id="addTokenBtn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+
+                            <!-- Connected Accounts List -->
+                            <div class="panel-box accounts-list-box">
+                                <div class="box-header-row">
+                                    <span class="box-title"><i class="fa-solid fa-users"></i> CONNECTED ACCOUNTS</span>
+                                    <span class="count-bubble">25</span>
+                                </div>
+
+                                <div class="accounts-scroll-area">
+                                    <!-- Account Item 1 -->
+                                    <div class="account-card">
+                                        <div class="avatar-wrap">
+                                            <div class="avatar-circle av-1"></div>
+                                            <span class="av-status online"></span>
+                                        </div>
+                                        <div class="account-details">
+                                            <div class="acc-name">msidragoncenter#0</div>
+                                            <div class="acc-sub"><i class="fa-solid fa-waveform"></i> Playing Dragon... <span class="in-ch"><i class="fa-solid fa-microphone-lines"></i> In Voice Channel</span></div>
+                                        </div>
+                                        <div class="acc-actions">
+                                            <span class="tag-pill voice">VOICE</span>
+                                            <span class="tag-pill vr"><i class="fa-solid fa-vr-cardboard"></i> VR</span>
+                                            <button class="btn-acc-action" title="Token"><i class="fa-regular fa-copy"></i></button>
+                                            <span class="status-text connected">CONNECTED</span>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-camera"></i></button>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-share-nodes"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-microphone"></i></button>
+                                            <button class="btn-acc-icon red"><i class="fa-solid fa-volume-xmark"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-right-from-bracket"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Account Item 2 -->
+                                    <div class="account-card">
+                                        <div class="avatar-wrap">
+                                            <div class="avatar-circle av-2"></div>
+                                            <span class="av-status online"></span>
+                                        </div>
+                                        <div class="account-details">
+                                            <div class="acc-name">hiresaudio#0</div>
+                                            <div class="acc-sub"><i class="fa-solid fa-waveform"></i> Playing Dragon... <span class="in-ch"><i class="fa-solid fa-microphone-lines"></i> In Voice Channel</span></div>
+                                        </div>
+                                        <div class="acc-actions">
+                                            <span class="tag-pill voice">VOICE</span>
+                                            <span class="tag-pill vr"><i class="fa-solid fa-vr-cardboard"></i> VR</span>
+                                            <button class="btn-acc-action" title="Token"><i class="fa-regular fa-copy"></i></button>
+                                            <span class="status-text connected">CONNECTED</span>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-camera"></i></button>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-share-nodes"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-microphone"></i></button>
+                                            <button class="btn-acc-icon red"><i class="fa-solid fa-volume-xmark"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-right-from-bracket"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Account Item 3 -->
+                                    <div class="account-card">
+                                        <div class="avatar-wrap">
+                                            <div class="avatar-circle av-3"></div>
+                                            <span class="av-status online"></span>
+                                        </div>
+                                        <div class="account-details">
+                                            <div class="acc-name">serumghost#0</div>
+                                            <div class="acc-sub"><i class="fa-solid fa-waveform"></i> Playing Dragon... <span class="in-ch"><i class="fa-solid fa-microphone-lines"></i> In Voice Channel</span></div>
+                                        </div>
+                                        <div class="acc-actions">
+                                            <span class="tag-pill voice">VOICE</span>
+                                            <span class="tag-pill vr"><i class="fa-solid fa-vr-cardboard"></i> VR</span>
+                                            <button class="btn-acc-action" title="Token"><i class="fa-regular fa-copy"></i></button>
+                                            <span class="status-text connected">CONNECTED</span>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-camera"></i></button>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-share-nodes"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-microphone"></i></button>
+                                            <button class="btn-acc-icon red"><i class="fa-solid fa-volume-xmark"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-right-from-bracket"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Account Item 4 -->
+                                    <div class="account-card">
+                                        <div class="avatar-wrap">
+                                            <div class="avatar-circle av-4"></div>
+                                            <span class="av-status online"></span>
+                                        </div>
+                                        <div class="account-details">
+                                            <div class="acc-name">ultimateservicex#0</div>
+                                            <div class="acc-sub"><i class="fa-solid fa-waveform"></i> Playing Dragon... <span class="in-ch"><i class="fa-solid fa-microphone-lines"></i> In Voice Channel</span></div>
+                                        </div>
+                                        <div class="acc-actions">
+                                            <span class="tag-pill voice">VOICE</span>
+                                            <span class="tag-pill vr"><i class="fa-solid fa-vr-cardboard"></i> VR</span>
+                                            <button class="btn-acc-action" title="Token"><i class="fa-regular fa-copy"></i></button>
+                                            <span class="status-text connected">CONNECTED</span>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-camera"></i></button>
+                                            <button class="btn-acc-icon active"><i class="fa-solid fa-share-nodes"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-microphone"></i></button>
+                                            <button class="btn-acc-icon red"><i class="fa-solid fa-volume-xmark"></i></button>
+                                            <button class="btn-acc-icon"><i class="fa-solid fa-right-from-bracket"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Soundpad & FX Control Studio -->
+                        <div class="app-right-panel" id="soundpad">
+                            <div class="panel-box media-control-box">
+                                <div class="box-header-row soundpad-header">
+                                    <div>
+                                        <span class="box-title"><i class="fa-solid fa-music"></i> SOUNDPAD & MEDYA OYNATICI</span>
+                                        <span class="file-types-hint">(MP3 / MP4 / WAV)</span>
+                                    </div>
+                                    <div class="mode-toggles">
+                                        <span class="toggle-pill active">Ortak (Tüm Hesaplar)</span>
+                                        <span class="toggle-pill">Her Hesaba Özel</span>
+                                    </div>
+                                </div>
+
+                                <!-- File Select & Track -->
+                                <div class="track-picker-row">
+                                    <button class="btn-file-select" id="demoPlayBtn">
+                                        <i class="fa-solid fa-folder-open"></i> Demo Parçayı Başlat
+                                    </button>
+                                    <div class="file-name-display" id="trackNameDisplay">Dragon_Hyper_Bass_Nightcore.mp3</div>
+                                </div>
+
+                                <!-- Audio Progress Bar -->
+                                <div class="audio-progress-wrap">
+                                    <span class="time-label" id="currentTimeLabel">1:24</span>
+                                    <input type="range" class="custom-slider time-slider" min="0" max="100" value="38" id="progressBar">
+                                    <span class="time-label" id="totalTimeLabel">3:42</span>
+                                </div>
+
+                                <!-- Audio Visualizer Waves -->
+                                <div class="visualizer-container">
+                                    <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                                    <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                                    <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                                    <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                                    <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                                </div>
+
+                                <!-- Master Volume -->
+                                <div class="fx-section">
+                                    <div class="fx-header">
+                                        <span><i class="fa-solid fa-volume-high"></i> NORMAL SES SEVİYESİ (BİLGİSAYAR %):</span>
+                                        <span class="fx-val-badge" id="volVal">%85</span>
+                                    </div>
+                                    <div class="preset-buttons-row">
+                                        <button class="btn-preset" data-vol="0">%0 (Sessiz)</button>
+                                        <button class="btn-preset" data-vol="25">%25</button>
+                                        <button class="btn-preset" data-vol="50">%50</button>
+                                        <button class="btn-preset" data-vol="75">%75</button>
+                                        <button class="btn-preset active" data-vol="100">%100 (Tam)</button>
+                                    </div>
+                                </div>
+
+                                <!-- 8D Audio & EQ Switches -->
+                                <div class="fx-two-col">
+                                    <div class="fx-card-mini">
+                                        <div class="mini-fx-top">
+                                            <span class="mini-title"><i class="fa-solid fa-headphones"></i> 8D Ses (360° Dönen Müzik)</span>
+                                            <button class="btn-switch active" id="btn8d">8D AÇIK</button>
+                                        </div>
+                                        <p class="mini-hint">Kulaklıklarda sağdan sola dönen sinematik 8D ses efekti</p>
+                                    </div>
+
+                                    <div class="fx-card-mini">
+                                        <div class="mini-fx-top">
+                                            <span class="mini-title"><i class="fa-solid fa-sliders"></i> Şarkı Ekolayzırı (5-Bant EQ)</span>
+                                            <button class="btn-switch active" id="btnEq">EQ AÇIK</button>
+                                        </div>
+                                        <p class="mini-hint">Frekans bantlarını özelleştir veya hazır önayarları kullan.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Pitch Shifter -->
+                                <div class="fx-section">
+                                    <div class="fx-header">
+                                        <span><i class="fa-solid fa-music"></i> ŞARKI PITCH SHIFTER (SES TONU):</span>
+                                        <span class="fx-val-badge" id="pitchVal">NORMAL (0)</span>
+                                    </div>
+                                    <input type="range" class="custom-slider" min="-6" max="6" value="0" id="pitchSlider">
+                                    <div class="preset-buttons-row mt-2">
+                                        <button class="btn-preset" data-pitch="-6">-6 (Çok Kalın)</button>
+                                        <button class="btn-preset" data-pitch="-3">-3 (Kalın)</button>
+                                        <button class="btn-preset" data-pitch="-1">-1</button>
+                                        <button class="btn-preset active" data-pitch="0">0 (Normal / Sıfırla)</button>
+                                        <button class="btn-preset" data-pitch="1">+1</button>
+                                        <button class="btn-preset" data-pitch="3">+3 (İnce)</button>
+                                        <button class="btn-preset special-glow" data-pitch="6">+6 (Nightcore)</button>
+                                    </div>
+                                </div>
+
+                                <!-- Bass Boost & Reverb -->
+                                <div class="fx-section">
+                                    <div class="fx-header">
+                                        <span><i class="fa-solid fa-bolt-lightning"></i> ŞARKI BASS BOOST (BAS SEVİYESİ):</span>
+                                        <span class="fx-val-badge highlight-red" id="bassVal">+18 dB</span>
+                                    </div>
+                                    <div class="preset-buttons-row">
+                                        <button class="btn-preset" data-bass="0">0 dB</button>
+                                        <button class="btn-preset" data-bass="6">+6 dB</button>
+                                        <button class="btn-preset" data-bass="12">+12 dB</button>
+                                        <button class="btn-preset active" data-bass="18">+18 dB</button>
+                                        <button class="btn-preset" data-bass="24">+24 dB</button>
+                                        <button class="btn-preset" data-bass="30">+30 dB</button>
+                                        <button class="btn-preset" data-bass="36">+36 dB</button>
+                                        <button class="btn-preset" data-bass="42">+42 dB</button>
+                                        <button class="btn-preset special-glow" data-bass="50">+50 dB</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-container">
+            <div class="section-title-wrap">
+                <span class="section-eyebrow">BİLGİ BANKASI</span>
+                <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Dragon Service nedir ve ne işe yarar?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dragon Service, birden fazla Discord hesabını (token) aynı anda ses kanallarına sokup senkronize şekilde yüksek kaliteli müzik çalmanızı, gelişmiş ses efektleri (8D, Bass Boost, Pitch, Reverb) uygulamanızı sağlayan profesyonel bir Discord ses aracıdır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Kaç adet hesap aynı anda ses odasına sokulabilir?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sistem 25 ve üzeri hesabı aynı anda sorunsuz şekilde destekleyecek şekilde optimize edilmiştir. Toplu .txt dosyası yükleyerek saniyeler içinde tüm hesapları odaya dahil edebilirsiniz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>8D ses ve Bass Boost özellikleri nasıl çalışır?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Gelişmiş dijital ses işleme (DSP) algoritmalarımız sayesinde şarkı çalarken gerçek zamanlı olarak 360 derece pan rotasyonu ve +50 dB'e kadar bozulmayan bas takviyesi uygulanır.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <div class="dragon-icon-box small">
+                        <i class="fa-solid fa-dragon"></i>
+                    </div>
+                    <span class="brand-title">DRAGON SERVICE</span>
+                </div>
+                <p class="footer-desc">Premium Discord Multi-Account Audio Engine.</p>
+            </div>
+
+            <div class="footer-copy">
+                <p>&copy; 2026 DRAGON SERVICE. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
