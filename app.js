@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isPlaying) {
             demoPlayBtn.innerHTML = `<i class="fa-solid fa-pause"></i> Parçayı Duraklat`;
             demoPlayBtn.style.background = 'linear-gradient(135deg, #22c55e, #15803d)';
-            trackNameDisplay.textContent = `▶ Çalıyor: Dragon_Hyper_Bass_Nightcore.mp3 (Hi-Fi 96kHz)`;
+            trackNameDisplay.textContent = `▶ Çalıyor: dragon.mp3`;
             trackNameDisplay.style.color = '#ef4444';
 
             // Start simulated progress
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             demoPlayBtn.innerHTML = `<i class="fa-solid fa-folder-open"></i> Demo Parçayı Başlat`;
             demoPlayBtn.style.background = 'linear-gradient(135deg, #ef4444, #b91c1c)';
-            trackNameDisplay.textContent = `Dragon_Hyper_Bass_Nightcore.mp3`;
+            trackNameDisplay.textContent = `dragon.mp3`;
             trackNameDisplay.style.color = '#9ca3af';
             stopProgress();
         }
